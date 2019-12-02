@@ -11,8 +11,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="{{route('home')}}">Home</a></li>
-            <li><a href="{{route('about_path')}}">About</a></li>
+            <li class="{{set_active_route('home')}}"><a href="{{route('home')}}">Home</a></li>
+            <li class="{{set_active_route('about_path')}}"><a href="{{route('about_path')}}">About</a></li>
             <li><a href="#contact">Artisan</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planet <span class="caret"></span></a>
