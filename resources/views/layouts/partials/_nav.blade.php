@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{route('home')}}">Laracarte</a>
+          <a class="navbar-brand" href="{{route('home')}}">{{config('app.name')}}</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -25,7 +25,7 @@
                 <li><a href="#">Larachat</a></li>
               </ul>
             </li>
-            <li><a href="#contact">contact</a></li>
+            <li class="{{set_active_route('contact_path')}}"><a href="{{route('contact_path')}}">contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about">Login</a></li>
